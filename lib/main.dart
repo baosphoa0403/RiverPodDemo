@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverprodemo/app/modifier/family_primitive_modifier.dart';
 import 'package:riverprodemo/app/notifier/notifier_page.dart';
 import 'package:riverprodemo/app/provider/provider_page.dart';
 
@@ -28,9 +29,9 @@ class MyAppState extends ConsumerState<MyApp> {
     if (this._selectedIndex == 0) {
       return const ProviderPage();
     } else if (this._selectedIndex == 1) {
-      return const Text("Notifier");
+      return const NotifierPage();
     } else {
-      return const Text("Modifier");
+      return FamilyPrimitiveModifierPage();
     }
   }
 
