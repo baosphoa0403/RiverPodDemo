@@ -1,0 +1,18 @@
+ref.watch dc sử dụng trong hàm build hoặc bên trong body của provider 
+vd provider có thể dùng ref.watch để tổng hợp nhiều provider lại 1 chỗ
+ref.listen dc sử dụng để quan sát provider lun nó giúp hữu ích cho hành động chắc chắn xảy 
+ra như là hiển thị snackbar khi có lỗi 
+ref.listen nhận vào 2 method : provider ,  callback (bạn mún thực thi gì khi state thay đổi)
+callback pass 2 values giá trị là trước state và sau state.
+nên dùng ref.watch hơn ref.read 
+Provider --- Returns any type - A service class / computed property (filtered list)
+StateProvider --- Returns any type - A filter condition / simple state object
+FutureProvider - Returns a Future of any type - A result from an API call
+StreamProvider - Returns a Stream of any type -A stream of results from an API
+
+
+
+
+
+
+.autoDispose: dùng khi cái state đó lâu rồi không sử dụng dispose là huỷ state 
